@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .header *:not(:first-child),
-.main *,
+.main,
 .footer {
   font-family: $fontContent;
 }
