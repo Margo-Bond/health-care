@@ -11,8 +11,84 @@
     <header class="header">
       <div class="header__logo">Women's Health</div>
     </header>
-    <main></main>
+    <main>
+      <div class="form">
+        <h2>
+          Не нашли что искали? Спросите специалиста и получите быстрый ответ
+        </h2>
+        <form id="messageForm" novalidate>
+          <!-- Ввод имени -->
+          <label for="name">Имя:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Ваше имя"
+            required
+            minlength="2"
+            maxlength="20"
+            pattern="^[А-Я][а-яё]*$"
+          />
+
+          <!-- сообщение об ошибке -->
+          <span class="error-message" id="nameError"></span>
+
+          <!-- Ввод электронной почты -->
+          <label for="email">Электронная почта:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Электронная почта"
+            required
+          />
+
+          <!-- сообщение об ошибке -->
+          <span class="error-message" id="emailError"></span>
+
+          <!-- Выбрать тему -->
+          <label for="topic">Тема вопроса:</label>
+          <select id="topic" required>
+            <option value="" disabled selected hidden>Выберите тему</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value="other">Другое</option>
+          </select>
+
+          <!-- сообщение об ошибке -->
+          <span class="error-message" id="topicError"></span>
+
+          <!-- Ввод сообщения -->
+
+          <label for="message_text">Введите сообщение:</label>
+          <textarea
+            id="message_text"
+            name="message_text"
+            rows="5"
+            cols="48"
+            placeholder="Сообщение"
+          >
+          </textarea>
+
+          <!-- сообщение об ошибке -->
+          <span class="error-message" id="messageError"></span>
+
+          <!-- Согласие -->
+          <label for="consent">Согласие на обработку данных</label>
+          <input type="checkbox" id="consent" required />
+
+          <!-- сообщение об ошибке -->
+          <span class="error-message checkbox-error" id="consentError"></span>
+
+          <!-- кнопка  -->
+          <button type="submit">Отправить вопрос</button>
+        </form>
+      </div>
+    </main>
     <footer class="footer"></footer>
+    <script src="./app.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
