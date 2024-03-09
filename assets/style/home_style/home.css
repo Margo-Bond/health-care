@@ -1,5 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.conteiner_form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.conteiner_form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.conteiner_form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.conteiner_form input[type=text],
+.conteiner_form input[type=email],
+.conteiner_form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.conteiner_form input[type=radio] {
+  margin-right: 5px;
+}
+.conteiner_form input[type=checkbox] {
+  margin-top: 10px;
+}
+.conteiner_form button[type=submit] {
+  background-color: #45a049;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.conteiner_form button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +65,6 @@ footer {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3vw;
   font-weight: 700;
-}/*# sourceMappingURL=home.css.map */
+}
+
+/*# sourceMappingURL=home.css.map */
