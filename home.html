@@ -8,76 +8,78 @@
     <link rel="stylesheet" href="./assets/style/home_style/home.css" />
     <link rel="icon" href="./assets/images/icon.png" type="image/png" />
   </head>
-  <style>* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-#checkupContainer {
-    width: 100%;
-    display: grid;
-    gap: 50px;
-    padding: 30px;
-}
+    #checkupContainer {
+      width: 100%;
+      display: grid;
+      gap: 50px;
+      padding: 30px;
+    }
 
-.checkup {
-    border: 2.5px solid rgb(186, 234, 241);
-    border-radius: 10px;
-    background-color: rgb(253, 253, 253);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
+    .checkup {
+      border: 2.5px solid rgb(186, 234, 241);
+      border-radius: 10px;
+      background-color: rgb(253, 253, 253);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
 
-.checkup__links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgb(186, 234, 241);
-    padding: 20px 0;
-    font-size: 1.2em;
+    .checkup__links {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: rgb(186, 234, 241);
+      padding: 20px 0;
+      font-size: 1.2em;
+    }
 
-}
+    .link:hover {
+      color: rgb(143, 125, 128);
+      font-weight: 700;
+      transform: scale(1.2);
+    }
 
-.link:hover {
-    color: rgb(143, 125, 128);
-    font-weight: 700;
-    transform: scale(1.2);
-}
+    .checkup__title {
+    }
 
-.checkup__title {}
+    .link1,
+    .link2,
+    .link3 {
+      cursor: pointer;
+    }
 
-.link1,
-.link2,
-.link3 {
-    cursor: pointer;
-}
+    .checkup__preparation {
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
 
-.checkup__preparation {
-    margin-bottom: 8px;
-    font-size: 1.1em;
-}
+    .checkup__interpretation,
+    .checkup__preparation {
+      display: none;
+    }
 
-.checkup__interpretation,
-.checkup__preparation {
-    display: none;
-}
+    .checkup__general {
+      font-size: 1.1em;
+      margin: 3% 5%;
+    }
 
-.checkup__general {
-    font-size: 1.1em;
-    margin: 3% 5%;
-}
-
-.checkup__description p {
-    text-align: start;
-}</style>
+    .checkup__description p {
+      text-align: start;
+    }
+  </style>
   <body>
     <header class="header">
       <div class="header__logo">Women's Health</div>
       <nav class="header__nav">
-        <a href="" class="header__nav-item">О нас</a>
-        <a href="" class="header__nav-item"></a>
-        <a href="" class="header__nav-item">Лаборатории</a>
+        <a href="#about-us" class="header__nav-item">О нас</a>
+        <a href="#labs" class="header__nav-item">Лаборатории</a>
+        <a href="#help" class="header__nav-item">Помощь</a>
       </nav>
       <div class="header__search">
         <input
@@ -90,7 +92,7 @@
       </div>
     </header>
     <main>
-      <div class="main__about">
+      <div id="about-us" class="main__about">
         <img
           src="./assets/images/women.jpg"
           class="main__about-img"
