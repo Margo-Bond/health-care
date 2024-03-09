@@ -1,5 +1,142 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.conteiner_form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.conteiner_form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.conteiner_form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.conteiner_form input[type=text],
+.conteiner_form input[type=email],
+.conteiner_form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.conteiner_form input[type=radio] {
+  margin-right: 5px;
+}
+.conteiner_form input[type=checkbox] {
+  margin-top: 10px;
+}
+.conteiner_form button[type=submit] {
+  background-color: #45a049;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.conteiner_form button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header *:not(:first-child),
+.main *,
+.footer {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 5vw;
+  width: 100%;
+}
+.header__logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+.header__nav {
+  display: flex;
+  gap: 15px;
+}
+.header__nav-item {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: inherit;
+}
+.header__input {
+  padding: 1vw;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.header__search {
+  display: flex;
+  height: 30px;
+  gap: 5px;
+}
+.header__button {
+  padding: 3px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  padding: 2vw;
+}
+.main .main__about {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: auto;
+  align-items: stretch;
+  gap: 3vw;
+}
+.main .main__about-img {
+  width: 100%;
+  height: auto;
+}
+.main .main__about-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .main__about-text {
+  text-align: justify;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+  width: 100%;
+  font-size: 1.2vw;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
 .conteiner_form {
   max-width: 400px;
   margin: 20px auto;
