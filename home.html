@@ -6,12 +6,58 @@
     <title>Women's Health</title>
     <link rel="stylesheet" href="./assets/style/normalize.css" />
     <link rel="stylesheet" href="./assets/style/home_style/home.css" />
+    <link rel="icon" href="./assets/images/icon.png" type="image/png" />
   </head>
   <body>
     <header class="header">
       <div class="header__logo">Women's Health</div>
+      <nav class="header__nav">
+        <a href="" class="header__nav-item">О нас</a>
+        <a href="" class="header__nav-item"></a>
+        <a href="" class="header__nav-item">Лаборатории</a>
+      </nav>
+      <div class="header__search">
+        <input
+          type="text"
+          id="searchInput"
+          class="header__input"
+          placeholder="Введите текст" />
+        <button onclick="search()" class="header__button">Поиск</button>
+        <div id="searchResults"></div>
+      </div>
     </header>
     <main>
+      <div class="main__about">
+        <img
+          src="./assets/images/women.jpg"
+          class="main__about-img"
+          alt="Дочь, мама, бабушка" />
+        <div class="main__about-desc">
+          <p class="main__about-text">
+            Добро пожаловать в Women's Health – ваш надежный гид в мире женского
+            здоровья!
+          </p>
+          <p class="main__about-text">
+            Мы - информационная компания, цель которой помочь женщинам всех
+            возрастов принимать осознанные решения о своем здоровье и
+            благополучии. Наша миссия - предоставить вам актуальную и полезную
+            информацию о чек-апах, которые помогут поддержать ваше здоровье и
+            предотвратить возможные заболевания.
+          </p>
+          <p class="main__about-text">
+            В Women's Health мы уделяем особое внимание женскому здоровью в
+            разных жизненных этапах. Наша команда экспертов готова поделиться с
+            вами статьями, рекомендациями и советами по всем аспектам вашего
+            здоровья, от регулярных медицинских осмотров до здорового образа
+            жизни.
+          </p>
+          <p class="main__about-text">
+            Мы стремимся стать вашим надежным партнером в заботе о здоровье и
+            благополучии. Присоединяйтесь к нам, и вместе мы сделаем ваше
+            женское здоровье приоритетом!
+          </p>
+        </div>
+      </div>
       <div class="form">
         <div class="conteiner_form">
           <h2>
@@ -27,8 +73,7 @@
               required
               minlength="2"
               maxlength="20"
-              pattern="^[А-Я][а-яё]*$"
-            />
+              pattern="^[А-Я][а-яё]*$" />
 
             <!-- сообщение об ошибке -->
             <span class="error-message" id="nameError"></span>
@@ -39,8 +84,7 @@
               type="email"
               id="email"
               placeholder="Электронная почта"
-              required
-            />
+              required />
 
             <!-- сообщение об ошибке -->
             <span class="error-message" id="emailError"></span>
@@ -69,8 +113,7 @@
               name="message_text"
               rows="5"
               cols="40"
-              placeholder="Сообщение"
-            >
+              placeholder="Сообщение">
             </textarea>
 
             <!-- сообщение об ошибке -->
@@ -89,7 +132,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">© 2024 Women's Health. Все права защищены.</footer>
     <script src="./app.js"></script>
   </body>
 </html>

@@ -1,8 +1,74 @@
 @import '../_vars.scss';
 @import '../form.scss';
 @import '../_templates.scss';
-.header__logo {
-  font-family: $fontLogo;
-  font-size: 3vw;
-  font-weight: 700;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 5vw;
+  width: 100%;
+  &__logo {
+    font-family: $fontLogo;
+    font-size: 3vw;
+    font-weight: 700;
+  }
+  &__nav {
+    display: flex;
+    gap: 15px;
+  }
+  &__nav-item {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: inherit;
+  }
+  &__input {
+    padding: 1vw;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+  &__search {
+    display: flex;
+    height: 30px;
+    gap: 5px;
+  }
+  &__button {
+    padding: 3px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: $colorBlack;
+    color: $colorWhite;
+  }
+}
+.main {
+  padding: 2vw;
+  .main__about {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+    gap: 3vw;
+  }
+  .main__about-img {
+    width: 100%;
+    height: auto;
+  }
+  .main__about-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main__about-text {
+    text-align: justify;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+  width: 100%;
+  font-size: 1.2vw;
+  background-color: $colorBlack;
+  color: $colorWhite;
 }
