@@ -21,7 +21,8 @@
           type="text"
           id="searchInput"
           class="header__input"
-          placeholder="Введите текст" />
+          placeholder="Введите текст"
+        />
         <button onclick="search()" class="header__button">Поиск</button>
         <div id="searchResults"></div>
       </div>
@@ -31,7 +32,8 @@
         <img
           src="./assets/images/women.jpg"
           class="main__about-img"
-          alt="Дочь, мама, бабушка" />
+          alt="Дочь, мама, бабушка"
+        />
         <div class="main__about-desc">
           <p class="main__about-text">
             Добро пожаловать в <span class="main__word">Women's Health</span> –
@@ -74,7 +76,8 @@
               required
               minlength="2"
               maxlength="20"
-              pattern="^[А-Я][а-яё]*$" />
+              pattern="^[А-Я][а-яё]*$"
+            />
 
             <!-- сообщение об ошибке -->
             <span class="error-message" id="nameError"></span>
@@ -85,7 +88,8 @@
               type="email"
               id="email"
               placeholder="Электронная почта"
-              required />
+              required
+            />
 
             <!-- сообщение об ошибке -->
             <span class="error-message" id="emailError"></span>
@@ -97,7 +101,6 @@
               <option value="women_health">женское здоровье</option>
               <option value="examinations">обследования</option>
               <option value="proper_nutrition">правильное питание</option>
-              <option value="other">Другое</option>
               <option value="other">Другое</option>
             </select>
 
@@ -112,7 +115,8 @@
               name="message_text"
               rows="5"
               cols="40"
-              placeholder="Сообщение">
+              placeholder="Сообщение"
+            >
             </textarea>
 
             <!-- сообщение об ошибке -->
